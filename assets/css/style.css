@@ -7,6 +7,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --cor-da-fonte: #464646;
 }
 
 body {
@@ -40,14 +41,17 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section {
     margin: 0 auto;
     width: 80%;
-    display: flex;
+}
+
+section.menu{
     align-items: center;
+    border-bottom: solid var(--cor-da-fonte) 1px;
+    display: flex;
     justify-content: space-between;
-    padding: 32px 20px;
-    border-bottom: solid black 1px;
+    padding: 2rem 20px;
 }
 
 .menu__titulo {
@@ -56,7 +60,7 @@ section.menu{
 }
 
 .menu__title__text {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .menu__list {
@@ -64,12 +68,82 @@ section.menu{
 }
 
 .menu__list__item {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 /*Sessão Title*/
 
-section.title{
+.title__div {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    color: var(--cor-da-fonte);
+}
+
+.title__bio {
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.title__subsection {
+    font-size: 1.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.title__network {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.title__network__item {
+    margin-right: 2rem;
+    color: var(--cor-da-fonte);
+}
+
+.title__network__item-img {
+    width: 2rem;
+    vertical-align: sub;
+}
+
+.title__photo {
+    width: 368px;
+    height: 368px;
+    border: var(--cor-da-fonte) solid 1px;
+    border-radius: 100%;
+}
+
+
+/* Skills*/
+
+section.skills{
+    margin-top: 2rem;
+}
+
+.skills__title {
+    text-align: center;
+    color: var(--cor-da-fonte);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.skills__line {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.skills__box {
+    background-color: white;
+    width: 176px;
+    height: 174px;
+}
+
+/* experiência*/
+
+section.experience{
 
 }
 
@@ -79,23 +153,6 @@ section.about{
 
 }
 
-/*Sessão Hobbies*/
-
-section.hobbies{
-    
-}
-
-/* Experiência Acadêmica*/
-
-section.academic{
-
-}
-
-/* experiência*/
-
-section.experience{
-
-}
 
 /*Contato*/
 
