@@ -8,6 +8,7 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --cor-da-fonte: #464646;
+   --cor-do-botao: #2a7ae4;
 }
 
 body {
@@ -137,14 +138,94 @@ section.skills{
 
 .skills__box {
     background-color: white;
-    width: 176px;
     height: 174px;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 20%;
+    display: flex;
+    align-items: flex-end;
 }
+
+.skills__box__list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.skills__img-img {
+    width: 2rem;
+}
+
 
 /* experiência*/
 
 section.experience{
+    margin-top: 2rem;
+}
 
+.experience:nth-child(2) {
+    border: solid red 1px;
+}
+
+.experience__section__title {
+    text-align: center;
+    color: var(--cor-da-fonte);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.experiencie__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.experience__img {
+    width: 60%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--cor-da-fonte);
+}
+
+.experience__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.experience__text {
+    font-size: 1rem;
+}
+
+.experience__description {
+    display: flex;
+    gap: 1rem;
+}
+
+.experiencia__botao {
+    padding: 1rem;
+    border: 1px solid var(--cor-do-botao);
+    color: var(--cor-do-botao);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.experiencia__botao:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.1s ease-in-out;
+}
+
+.experiencia__botao--demo {
+    background-color: var(--cor-do-botao);
+    color: var(--cor-de-fundo);
 }
 
 /*Sessão About*/
