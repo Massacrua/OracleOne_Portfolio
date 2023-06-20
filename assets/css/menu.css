@@ -22,3 +22,14 @@ section.menu{
 .menu__list__item {
     margin-left: 2rem;
 }
+
+/*Tablet*/
+@media (max-width: 1023px) {
+    .menu__list__item {
+        display: none;
+    }
+
+    .menu__list__item-contato {
+        display: block;
+    }
+}

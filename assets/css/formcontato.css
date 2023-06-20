@@ -48,6 +48,7 @@ section.formcontato{
 
 .formcontato__input:focus, .formcontato__textarea:focus {
     border-bottom: var(--cor-do-botao) 2px solid;
+    transition: 0.1s;
     outline: none;
 }
 
@@ -78,5 +79,11 @@ section.formcontato{
 .formcontato__botao:hover {
     cursor: pointer;
     scale: 1.1;
+    transition: 0.1s ease-in-out;
+}
+
+.formcontato__botao:active {
+    cursor: pointer;
+    scale: 1;
     transition: 0.1s ease-in-out;
 }

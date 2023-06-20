@@ -38,3 +38,15 @@
     border: var(--cor-da-fonte) solid 1px;
     border-radius: 100%;
 }
+
+@media (max-width: 1023px) {
+    .title__bio {
+        font-size: 1.375rem;
+    }
+
+
+    .title__photo {
+        height: 146px;
+        width: 146px;
+    }
+}
