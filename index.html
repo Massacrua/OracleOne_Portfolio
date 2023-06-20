@@ -8,6 +8,12 @@
     <!-- Folha de estilo de CSS Linkado -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/title.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/formcontato.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,9 +51,9 @@
                 <h3 class="title__subsection">Sou estudante de Engenharia de Software, estou participando do projeto Oracle ONE na Alura com foco em React.</h3>
                 <ul class="title__network">
                     <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/Massacrua">Github <img class="title__network__item-img" src="assets/img/github.svg"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/guilherme-dalla-rosa/">Linkedin <img class="title__network__item-img" src="assets/img/linkedin.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img class="title__network__item-img" src="assets/img/curriculo-icone.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/Massacrua" target="_blank">Github <img class="title__network__item-img" src="assets/img/github.svg"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/guilherme-dalla-rosa/" target="_blank">Linkedin <img class="title__network__item-img" src="assets/img/linkedin.png"></a></li>
+                    <li class="title__network__item"><a href="" target="_blank">Currículo <img class="title__network__item-img" src="assets/img/curriculo-icone.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -105,13 +111,13 @@
                 <h3 class="experience__text">Challenge Alura Codificador </h3>
                 <div class="experience__description">
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a href="https://github.com/Massacrua/Decodificador-OracleOne"><button class="experiencia__botao--repo experiencia__botao">Repositório</button></a></span>
-                        <span class="experience__demo"><a href="https://massacrua.github.io/Decodificador-OracleOne/"><button class="experiencia__botao--demo experiencia__botao">Ver demo</button></a></span>
+                    <span class="experience__repo"><a href="https://github.com/Massacrua/Decodificador-OracleOne" target="_blank"><button class="experiencia__botao--repo experiencia__botao" >Repositório</button></a></span>
+                    <span class="experience__demo"><a href="https://massacrua.github.io/Decodificador-OracleOne/" target="_blank"><button class="experiencia__botao--demo experiencia__botao">Ver demo</button></a></span>
                 </div>
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experiencie__box experiencie__box--right">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
             <img class="experience__img" src="assets/img/loud_website.png">
             <div class="experience__info">
@@ -119,66 +125,43 @@
                 <h3 class="experience__text">EM DESENVOLVIMENTO</h3>
                 <div class="experience__description">
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href=""><button class="experiencia__botao--repo experiencia__botao">Repositório</button></a></span>
-                    <span class="experience__demo"><a href=""><button class="experiencia__botao--demo experiencia__botao">Ver demo</button></a></span>
+                    <span class="experience__repo"><a href="" target="_blank"><button class="experiencia__botao--repo experiencia__botao">Repositório</button></a></span>
+                    <span class="experience__demo"><a href="" target="_blank"><button class="experiencia__botao--demo experiencia__botao">Ver demo</button></a></span>
                 </div>
             </div>
         </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info">
-                <h2 class="experience__title">experience__title</h2>
-                <h3 class="experience__text">experience__text</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a href=""><button class="experiencia__botao--repo experiencia__botao">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experiencia__botao--demo experiencia__botao">Ver demo</button></a></span>
-                </div>
-            </div>
-        </div>  
+    </section>
 
         <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
-                    </form>
-                </div>
+    <section class="formcontato">
+        <div id="contato" class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="assets/img/contact_image.png">
             </div>
-        </section>
-
-        <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desenvolvido por Fulana de Tal</p>
-                <p>2022</p>
+            <div class="formcontato__text">
+                <h2 class="formcontato__title">Contato</h2>
+                <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
+                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                <form class="formcontato__form">
+                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
+                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
+                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                    <button class="formcontato__botao">Enviar mensagem</button>
+                </form>
             </div>
-        </section>
-    </section>
-
-        <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets\img\signature.png">
         </div>
     </section>
+
+    <!-- Sessão de Footer/Rodapé-->
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desenvolvido por Massacrua</p>
+            <p>junho/2023</p>
+        </div>
+    </section>
+    
+
 
     <!-- Script Linkado do seu documento de JavaScript -->
 <script src="validate.js"></script>

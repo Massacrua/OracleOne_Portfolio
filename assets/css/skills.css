@@ -1,0 +1,38 @@
+section.skills{
+    margin-top: 2rem;
+}
+
+.skills__title {
+    text-align: center;
+    color: var(--cor-da-fonte);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.skills__line {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.skills__box {
+    background-color: white;
+    height: 174px;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills__box__list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.skills__img-img {
+    width: 2rem;
+}

@@ -1,0 +1,40 @@
+.title__div {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    color: var(--cor-da-fonte);
+}
+
+.title__bio {
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.title__subsection {
+    font-size: 1.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.title__network {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.title__network__item {
+    margin-right: 2rem;
+    color: var(--cor-da-fonte);
+}
+
+.title__network__item-img {
+    width: 2rem;
+    vertical-align: sub;
+}
+
+.title__photo {
+    width: 368px;
+    height: 368px;
+    border: var(--cor-da-fonte) solid 1px;
+    border-radius: 100%;
+}
