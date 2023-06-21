@@ -3,7 +3,7 @@ section.menu{
     border-bottom: solid var(--cor-da-linha) 1px;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
 }
 
 .menu__titulo {
@@ -21,6 +21,10 @@ section.menu{
 
 .menu__list__item {
     margin-left: 2rem;
+}
+
+.menu__list__item-contato {
+    font-weight: bold;
 }
 
 /*Tablet*/

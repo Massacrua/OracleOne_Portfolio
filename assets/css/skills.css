@@ -25,6 +25,7 @@ section.skills{
     display: flex;
     align-items: flex-end;
     color: var(--cor-da-fonte);
+    font-weight: bold;
 }
 
 .skills__box__list {
@@ -54,5 +55,16 @@ section.skills{
 
     .skills__box {
         flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__box {
+        flex-basis: 45%;
+    }
+
+    .skills__box__list {
+        flex-direction: column;
+        gap: 1rem;
     }
 }

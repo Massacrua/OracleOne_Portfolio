@@ -1,4 +1,7 @@
 section.footer{
-    padding: 2rem;
     text-align: center;
+ }
+
+ .footer__rodape {
+    padding: 2rem;
  }

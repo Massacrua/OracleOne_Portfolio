@@ -20,11 +20,8 @@
 .title__network {
     display: flex;
     font-size: 1.2rem;
-}
-
-.title__network__item {
-    margin-right: 2rem;
     color: var(--cor-da-fonte);
+    gap: 2rem;
 }
 
 .title__network__item-img {
@@ -57,5 +54,34 @@
 
     .title__network__item {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title__div {
+        margin: 1rem 0 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .title__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title__photo {
+        height: 98px;
+        width: 98px;
+    }
+
+    .title__subsection {
+        font-size: 0.875;
+    }
+
+    .title__network {
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

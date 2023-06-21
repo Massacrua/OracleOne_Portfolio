@@ -78,7 +78,7 @@ section.experience{
 
 @media screen and (max-width: 1023px) {
     section.experience {
-        margin: 2rem 2rem;
+        margin: 2rem auto;
     }
     
     .experience__section__title {
@@ -111,4 +111,8 @@ section.experience{
         padding: 0.75rem 1rem;
         font-weight: bold;
     }
+}
+
+@media screen and (max-width: 767px) {
+
 }
