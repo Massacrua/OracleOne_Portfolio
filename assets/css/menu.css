@@ -3,7 +3,7 @@ section.menu{
     border-bottom: solid var(--cor-da-linha) 1px;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 20px;
+    padding: 2rem 2rem;
 }
 
 .menu__titulo {
@@ -24,12 +24,13 @@ section.menu{
 }
 
 /*Tablet*/
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     .menu__list__item {
         display: none;
     }
 
     .menu__list__item-contato {
         display: block;
+        font-weight: bold;
     }
 }

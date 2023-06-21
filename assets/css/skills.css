@@ -24,6 +24,7 @@ section.skills{
     flex: 20%;
     display: flex;
     align-items: flex-end;
+    color: var(--cor-da-fonte);
 }
 
 .skills__box__list {
@@ -33,6 +34,25 @@ section.skills{
     gap: 0.5rem;
 }
 
+.skills__name {
+    font-weight: bold;
+}
+
 .skills__img-img {
     width: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .skills__title {
+        font-size: 1.375rem;
+    }
+
+    .skills__line {
+        flex-wrap: wrap;
+        gap: 2rem 1rem;
+    }
+
+    .skills__box {
+        flex-basis: 30%;
+    }
 }

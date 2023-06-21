@@ -44,6 +44,10 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     margin: 0 auto;
     width: 75%;
@@ -53,8 +57,11 @@ section {
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
-
+@media screen and (max-width: 1023px) {
+    section {
+        width: 91.6%;
+        margin: 0 auto;
+    }
 }
 
 /*Mobile*/
