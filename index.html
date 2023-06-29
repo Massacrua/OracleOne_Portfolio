@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,6 @@
 </head>
 <body>
     <!-- Sessão de Menu  -->
-    <div class="all">
     <section class="menu">
         <header class="menu__titulo">
             <img src="assets/img/panda_emoji.svg">
@@ -62,41 +61,41 @@
     <!-- Sessão de Skills/Habilidades -->
     <section class="skills">
         <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul class="skills__box__list">
-                        <li class="skills__img"><img src="assets\img\htlm.png"></li>
-                        <li class="skills__name">HTML</li>
-                    </ul>
-                </div>
+        <div class="skills__line">
+            <div class="skills__box">
+                <ul class="skills__box__list">
+                    <li class="skills__img"><img src="assets\img\htlm.png"></li>
+                    <li class="skills__name">HTML</li>
+                </ul>
+            </div>
 
-                <div class="skills__box">
-                    <ul class="skills__box__list">
-                        <li class="skills__img"> <img src="assets/img/css_icon.png" alt=""></li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
+            <div class="skills__box">
+                <ul class="skills__box__list">
+                    <li class="skills__img"> <img src="assets/img/css_icon.png" alt=""></li>
+                    <li class="skills__name">CSS</li>
+                </ul>
+            </div>
 
-                <div class="skills__box">
-                    <ul class="skills__box__list">
-                        <li class="skills__img"> <img src="assets/img/js_icon.png" alt=""> </li>
-                        <li class="skills__name">JavaScript</li>
-                    </ul>
-                </div>
+            <div class="skills__box">
+                <ul class="skills__box__list">
+                    <li class="skills__img"> <img src="assets/img/js_icon.png" alt=""> </li>
+                    <li class="skills__name">JavaScript</li>
+                </ul>
+            </div>
 
-                <div class="skills__box">
-                    <ul class="skills__box__list">
-                        <li class="skills__img"> <img src="assets/img/react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
+            <div class="skills__box">
+                <ul class="skills__box__list">
+                    <li class="skills__img"> <img src="assets/img/react_icon.png" alt=""> </li>
+                    <li class="skills__name">React</li>
+                </ul>
+            </div>
 
-                <div class="skills__box">
-                    <ul class="skills__box__list">
-                        <li class="skills__img"> <img src="assets/img/github.svg" alt="" class="skills__img-img"> </li>
-                        <li class="skills__name">Git / Github</li>
-                    </ul>
-                </div>
+            <div class="skills__box">
+                <ul class="skills__box__list">
+                    <li class="skills__img"> <img src="assets/img/github.svg" alt="" class="skills__img-img"> </li>
+                    <li class="skills__name">Git / Github</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -143,10 +142,26 @@
                 <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                 <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                 <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                    <div class="inputbox">
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required maxlength="50" minlength="3" name="nome">
+                        <span class="msg__erro"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" required name="email" minlength="5">
+                        <span class="msg__erro"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required maxlength="50" name="assunto">
+                        <span class="msg__erro"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required maxlength="800" name="mensagem" minlength="15"></textarea>
+                        <span class="msg__erro"></span>
+                    </div>
+
                     <button class="formcontato__botao">Enviar mensagem</button>
                 </form>
             </div>
