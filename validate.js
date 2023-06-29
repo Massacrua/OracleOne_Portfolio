@@ -1,4 +1,5 @@
 const camposDoFormulario = document.querySelectorAll("[required]");
+const formulario = document.querySelector("[data-form]")
 const tiposDeErro = [
     "valueMissing",
     "typeMismatch",
@@ -6,7 +7,6 @@ const tiposDeErro = [
     "tooShort",
     "customError"
 ]
-
 const mensagens = {
     nome: {
         valueMissing: "Preencha seu nome.",
@@ -26,6 +26,10 @@ const mensagens = {
         tooShort: "Escreva uma mensagem maior.",
     }
 }
+
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+})
 
 camposDoFormulario.forEach((campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo));
